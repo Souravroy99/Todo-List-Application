@@ -2,32 +2,34 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 .container{
     width: 100%;
-    height: 100vh ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* margin-top: 0rem; */
 }
 
 .no-records{
     text-align: center;
 }
 
-.total-container{
+.input-part{
+    margin-top: -17rem;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
     flex-direction: column;
-    /* margin-top: -10%; */
+    /* background-color: red; */
+    padding-bottom: 2rem ;
 }
 
 .todo-container{
     width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3,1fr);
     word-break: break-all;
 }
 
@@ -70,14 +72,13 @@
 /******* Toast *******/
 .toastBody {
     font-family: "Atlas Grotesk Web", Arial, Helvetica, sans-serif;
-    /* font-size: 1.9rem ; */
+    /* font-size: 2rem; */
 }
 
 
-.taskContainer{
-    display: grid;
-    grid-template-columns: repeat(3,1fr) ;
-}
+/* .taskContainer{
+
+} */
 
 .singleTask{
     display: flex;
@@ -87,7 +88,9 @@
     padding: 0.2rem ;
     background-color: rgb(12, 242, 211);
     background-color: rgb(255, 127, 127);
-
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 3rem;
 } 
 .checkBox{
     display: flex;
@@ -98,10 +101,6 @@
     color: white;
 }
 
-.task, .strike{
-    /* font-size: 1.3rem; */
-
-}
 
 .check-icon{
     color: rgb(8, 232, 8);
@@ -115,7 +114,7 @@
 
 .icon{
     margin: 0.2rem 0.5rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     cursor: pointer;
 }
 

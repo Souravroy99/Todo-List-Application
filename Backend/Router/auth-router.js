@@ -56,7 +56,8 @@ router.route('/delete/:id').delete(async(req,res) => {
     try{
         const id = req.params.id ;
         await TodoModel.deleteOne({_id: id}) ;
-        return res.status(200).json("Task deleted successfully") ;
+        const data = await TodoModel.find() ;
+        return res.status(200).json(data) ;
     }
     catch(error) {
         res.status(400).json(`auth-router.js DELETE ERROR! : ${error}`) ;
