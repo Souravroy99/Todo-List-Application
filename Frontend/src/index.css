@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin-top: 0rem; */
+}
+
+.no-records{
+    text-align: center;
+}
+
+.total-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin-top: -10%; */
+}
+
+.todo-container{
+    width: 80%;
+    word-break: break-all;
+}
+
+.main-heading{
+    font-size: 2.5rem ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 30% ;
+}
+
+.input-field{
+    padding: 0.7rem ;
+    width: 20rem;
+    background-color: bisque;
+    margin-bottom: 1rem ;
+    margin-top: 2rem ;
+    border-radius: 0.3rem ;
+    font-size: 1rem;
+
+}
+ 
+.btn{
+    height: 2.85rem;
+    width: 3rem;
+    background-color: rgb(102, 255, 6);
+    color: white;
+    border: 2px solid black;
+    border-radius: 0.3rem ;
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.btn:hover{
+    background-color: rgb(45, 223, 243);
+    color: rgb(5, 4, 1);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/******* Toast *******/
+.toastBody {
+    font-family: "Atlas Grotesk Web", Arial, Helvetica, sans-serif;
+    /* font-size: 1.9rem ; */
+}
+
+
+.taskContainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr) ;
+}
+
+.singleTask{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.2rem;
+    padding: 0.2rem ;
+    background-color: rgb(12, 242, 211);
+    background-color: rgb(255, 127, 127);
+
+} 
+.checkBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0.2rem;
+    /* font-size: large; */
+    color: white;
+}
+
+.task, .strike{
+    /* font-size: 1.3rem; */
+
+}
+
+.check-icon{
+    color: rgb(8, 232, 8);
+
+}
+
+.checkbox-icon{
+    color: rgb(235, 235, 7);
+
+}
+
+.icon{
+    margin: 0.2rem 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.strike{
+    color: red;
+}
